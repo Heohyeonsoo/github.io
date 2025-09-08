@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="QuickShort: Free URL Shortener for easy sharing. Shorten links for SNS, study materials, and more!">
+    <meta name="keywords" content="free URL shortener, link shortener, URL shortening, Korea, SNS">
+    <meta name="robots" content="index, follow">
+    <title>QuickShort - Free URL Shortener</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/qr-code-styling@1.5.0/lib/qr-code-styling.js"></script>
+    <!-- Google Analytics (replace G-XXXX with your ID from analytics.google.com) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-XXXX');
+    </script>
+</head>
+<body>
+    <header>
+        <h1>QuickShort</h1>
+        <select id="lang">
+            <option value="ko">한국어</option>
+            <option value="en">English</option>
+        </select>
+    </header>
+    <main>
+        <div class="shortener-container">
+            <h2>Shorten Your Links in Seconds</h2>
+            <form id="url-shorten-form">
+                <input type="url" id="url-input" placeholder="Paste your long URL here..." required>
+                <button type="submit">Shorten Now!</button>
+            </form>
+            <div id="result"></div>
+            <div id="qr-code"></div>
+        </div>
+        <!-- AdSense (replace ca-pub-XXXX with your ID from ads.google.com) -->
+        <div class="adsense-banner">
+            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXX"
+                    crossorigin="anonymous"></script>
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-XXXX"
+                 data-ad-slot="XXXX"
+                 data-ad-format="auto"></ins>
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2025 QuickShort. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
